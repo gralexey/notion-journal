@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="18122" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="18122"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="AddWindowController" customModule="NotionJournal" customModuleProvider="target">
+            <connections>
+                <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="F0z-JX-Cv5">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="196" y="240" width="450" height="110"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1536" height="935"/>
+            <view key="contentView" id="se5-gp-TjO">
+                <rect key="frame" x="0.0" y="0.0" width="450" height="110"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <scrollView borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rFq-Gn-hQi">
+                        <rect key="frame" x="15" y="15" width="357" height="80"/>
+                        <clipView key="contentView" drawsBackground="NO" id="39g-Rj-yla">
+                            <rect key="frame" x="0.0" y="0.0" width="357" height="80"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <textView importsGraphics="NO" richText="NO" verticallyResizable="YES" spellingCorrection="YES" smartInsertDelete="YES" id="CyM-00-rYs">
+                                    <rect key="frame" x="0.0" y="0.0" width="357" height="80"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    <size key="minSize" width="357" height="80"/>
+                                    <size key="maxSize" width="360" height="10000000"/>
+                                    <color key="insertionPointColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                </textView>
+                            </subviews>
+                        </clipView>
+                        <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="RMi-CU-c7B">
+                            <rect key="frame" x="-100" y="-100" width="240" height="16"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </scroller>
+                        <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="a4y-Q7-WgL">
+                            <rect key="frame" x="341" y="0.0" width="16" height="80"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </scroller>
+                    </scrollView>
+                    <button translatesAutoresizingMaskIntoConstraints="NO" id="HBE-Wb-Z45">
+                        <rect key="frame" x="387" y="27.5" width="48" height="55"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="48" id="8us-vK-s8R"/>
+                            <constraint firstAttribute="height" constant="48" id="MLZ-Lf-8gA"/>
+                        </constraints>
+                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="paperplane.fill" catalog="system" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="Q6K-M6-JXX">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                    </button>
+                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bDv-Jl-mHe">
+                        <rect key="frame" x="29" y="20" width="241" height="70"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" title=" 4 f rf erfs fw wef we f wefervfefebfvefwefvwefwefwefwefvwefwefwefvefwefwevfwefwevfwvefw" drawsBackground="YES" id="kry-Ch-RjO">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="rFq-Gn-hQi" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" constant="15" id="EZA-qE-o0v"/>
+                    <constraint firstAttribute="trailing" secondItem="HBE-Wb-Z45" secondAttribute="trailing" constant="15" id="G0C-7R-sPR"/>
+                    <constraint firstItem="HBE-Wb-Z45" firstAttribute="leading" secondItem="rFq-Gn-hQi" secondAttribute="trailing" constant="15" id="Ool-8K-t72"/>
+                    <constraint firstAttribute="bottom" secondItem="rFq-Gn-hQi" secondAttribute="bottom" constant="15" id="jNh-Ye-gz2"/>
+                    <constraint firstItem="HBE-Wb-Z45" firstAttribute="centerY" secondItem="se5-gp-TjO" secondAttribute="centerY" id="qSi-bQ-Apw"/>
+                    <constraint firstItem="rFq-Gn-hQi" firstAttribute="top" secondItem="se5-gp-TjO" secondAttribute="top" constant="15" id="rCb-dZ-bKt"/>
+                </constraints>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="0bl-1N-AYu"/>
+            </connections>
+            <point key="canvasLocation" x="59" y="30"/>
+        </window>
+    </objects>
+    <resources>
+        <image name="paperplane.fill" catalog="system" width="16" height="16"/>
+    </resources>
+</document>
